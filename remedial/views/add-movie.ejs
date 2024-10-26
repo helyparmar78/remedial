@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Add Movie</title></head>
+<body>
+  <form action="/add-movie" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Movie Name" required><br>
+    <input type="text" name="director" placeholder="Director"><br>
+    <input type="text" name="producer" placeholder="Producer"><br>
+    <input type="date" name="release_date" placeholder="Release Date"><br>
+    <input type="file" name="image" accept="image/*"><br>
+    <label>Screens:</label>
+    <input type="checkbox" name="screens" value="Screen1"> Screen1
+    <input type="checkbox" name="screens" value="Screen2"> Screen2
+    <button type="submit">Add Movie</button>
+  </form>
+</body>
+</html>
